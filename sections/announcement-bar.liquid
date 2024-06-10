@@ -41,7 +41,7 @@
             >
           {%- endif -%}
           <p class="announcement-bar__message h5">
-            <span>{{ section.blocks.first.settings.text | escape }}</span>
+            <span>{{ section.blocks.first.settings.text | escape | upcase }}</span>
             {%- if section.blocks.first.settings.link != blank -%}
               {% render 'icon-arrow' %}
             {%- endif -%}
@@ -100,7 +100,7 @@
                       >
                     {%- endif -%}
                     <p class="announcement-bar__message h5">
-                      <span>{{ block.settings.text | escape }}</span>
+                      <span>{{ block.settings.text | escape | upcase }}</span>
                       {%- if block.settings.link != blank -%}
                         {% render 'icon-arrow' %}
                       {%- endif -%}
@@ -173,7 +173,7 @@
       "type": "color_scheme",
       "id": "color_scheme",
       "label": "t:sections.all.colors.label",
-      "default": "scheme-4"
+      "default": "scheme-6"
     },
     {
       "type": "checkbox",

@@ -1,7 +1,7 @@
 {
   "scripts": {
     "dev": "npm run shopify:dev && npm run watch",
-    "shopify:dev": "shopify theme dev -s sleepytestfigma",
+    "shopify:dev": "shopify theme dev -s PLACE_YOUR_SHOPIFY_STORE_URL_HERE",
     "build": "vite build --minify",
     "watch": "vite build --watch"
   },
